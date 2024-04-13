@@ -1,0 +1,77 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Main-container {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container {
+  flex: 1;
+  display: flex;
+}
+
+.grid-container {
+  flex: 1;
+  display: grid;
+  background-color: #2196f3;
+  grid-template-areas:
+    "five six seven seven"
+    "five six seven seven"
+    "five six eight eight"
+    "five six eight eight";
+}
+
+.flex-container-left {
+  flex: 1;
+  background-color: #2196f3;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-right {
+  flex: 1;
+  background-color: #2196f3;
+  display: flex;
+  flex-direction: row;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7,
+.item-8 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3eafd;
+  font-size: 40px;
+  margin: 1px;
+}
+
+.item-5 {
+  grid-area: five;
+}
+
+.item-6 {
+  grid-area: six;
+}
+
+.item-7 {
+  grid-area: seven;
+}
+
+.item-8 {
+  grid-area: eight;
+}
